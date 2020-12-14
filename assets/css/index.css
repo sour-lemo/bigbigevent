@@ -1,0 +1,41 @@
+/* index样式 */
+
+.layui-footer {
+    text-align: center;
+}
+
+.layui-icon-app {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.iconfont {
+    margin-right: 10px;
+}
+
+.textAvatar {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+    background-color: #419488;
+    font-size: 20px;
+    display: none;
+}
+
+.userinfo {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    user-select: none;
+    border-bottom: 1px solid gray;
+}
+
+.layui-body {
+    overflow: hidden;
+}
