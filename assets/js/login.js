@@ -52,7 +52,7 @@ $(function () {
         const data = $(this).serialize();
         $.ajax({
             type: 'POST',
-            url: 'http://ajax.frontend.itheima.net/api/reguser',
+            url: '/api/reguser',
             data,
             success: function (res) {
                 // console.log(res);
@@ -70,16 +70,18 @@ $(function () {
     $('#loginForm').submit(function (e) {
         e.preventDefault();
         const data = $(this).serialize();
-        console.log(data);
+        // console.log(data);
         $.ajax({
             type: 'POST',
-            url: 'http://ajax.frontend.itheima.net/api/login',
+            url: '/api/login',
             data,
             success: function (res) {
                 // console.log(res);
                 if (res.status !== 0) {
                     return layer.msg(res.message);
                 }
+                // 本地存储token
+                localStorage.setItem('token', res.token);
                 layer.msg('登录成功，即将跳转页面...', {
                     time: 2000,
                 }, function () {
