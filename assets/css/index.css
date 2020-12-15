@@ -39,3 +39,7 @@
 .layui-body {
     overflow: hidden;
 }
+
+iframe {
+    background-color: rgb(242, 243, 245);
+}
